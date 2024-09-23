@@ -1,0 +1,380 @@
+body {
+    background-color: #15191c;
+    font-family: 'Times New Roman', Times, serif;
+    color: #ffffff;
+  }
+
+body nav {
+    background-color: #000000;
+
+  }
+
+  
+  .navigation {
+    box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.116);
+  }
+
+  .container {
+    --bs-gutter-x:0;
+  
+  }
+
+
+  .social-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    z-index: 4;
+    padding: 10px 10px;
+    
+  }
+
+  
+
+  .animatie {
+    position: relative;
+    display:flex;
+    justify-content: center;
+   
+  }
+
+
+  @media only screen and (min-width: 1280px)  { 
+    .animatie{
+    height: 800px;
+    width: 100%;
+  }
+    
+  }
+
+  @media only screen and (max-width: 460px) { 
+    .animatie{
+    height: 200px;
+    width: 100%;
+  }
+    .social-icon {
+      display: flex;
+      flex-direction: initial;
+      justify-content: center;
+      position: relative;
+      padding-bottom: 70px;
+      right: 0;
+    }
+  
+    
+  }
+
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+  
+
+  .projects {
+    overflow: hidden;
+    padding: 20px;
+
+  }
+
+  .navigation img {
+    width: 100px;
+    height: 100px;
+  }
+  
+
+  .shadow-card {
+    aspect-ratio: 1/1;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 10px rgba(255, 255, 255, 0.1),
+    5px 5px 10px rgba(0, 0, 0, 0.3), -5px -5px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+
+  }
+  
+
+  
+  .box {
+    aspect-ratio: 1/1;
+    position: relative;
+    background: #15191c;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    box-shadow: inset 5px 5px 5px rgba(87, 87, 87, 0.2), inset -5px -5px 15px rgba(23, 23, 23, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(0, 0, 0, 0.1);
+    perspective: 1000px; /* Added perspective for 3D effect */
+  
+  }
+  
+  .box.is-flipped {
+    transform: rotateY(180deg); /* Corrected this for 180-degree flip */
+
+  
+  }
+  
+  .box-face {
+    position: absolute;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    backface-visibility: hidden; /* Ensures that the back is hidden initially */
+    /* padding: 20px; */
+  }
+  
+  .box-back {
+    transform: rotateY(180deg); /* Flips the back side initially */
+  }
+  
+  .box p {
+    font-size: 1rem;
+    margin-top: 1rem;
+  
+  }
+
+
+  .button {
+    padding-top: 10px;
+  }
+
+  .theme-btn {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: smaller;
+    letter-spacing: 2px;
+    background: #15191c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+ 
+    &:nth-child(1) {
+      box-shadow: 0px 0px 10px rgba(8, 8, 8, 0.288),
+        0px 0px 5px rgba(0, 0, 0, 0.356);
+      color: #ffffff;
+    
+      
+      &:hover {
+        opacity: 1;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -1px -1px 8px rgba(255, 255, 255, 0.1),
+    5px 5px 10px rgba(0, 0, 0, 0.3), -1px -1px 5px rgba(255, 255, 255, 0.1);
+      }
+    }
+    
+  }
+
+  .theme-btn i {
+   padding-right: 5px;
+   font-weight: 200;
+  }
+ 
+ 
+  
+ 
+
+/* Cards display lg */
+/* @media (min-width: 1200px) {
+  .item-1 {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+
+  }
+
+
+  .item-2 {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-left: 80px;
+  }
+  
+  .item-2 .box {
+    aspect-ratio: 16/11;
+  }
+  
+  .item-3 {
+    width: 300px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: -30px;
+  }
+
+
+
+  .item-4 {
+    width: 300px;
+    height: 300px;
+    
+
+  }
+
+
+  .item-5 {
+    width: 500px;
+    height: 300px;
+    margin-left: 30px;
+  }
+
+  .item-5 .box {
+    aspect-ratio: 16/9;
+  }
+
+
+
+  .item-6 {
+    width: 300px;
+    height: 200px;
+    margin-top: 150px;
+    margin-left: -30px;
+    
+  }
+
+  .item-6 .box {
+    aspect-ratio: 16/9;
+    
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .item-1 {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+  }
+
+
+  .item-2 {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 50px;
+    margin-left: 120px;
+  }
+  
+  .item-2 .box {
+    aspect-ratio: 16/11;
+  }
+  
+  .item-3 {
+    width: 300px;
+    height: 300px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+
+
+  .item-4 {
+    width: 300px;
+    height: 300px;
+
+  }
+
+
+  .item-5 {
+    width: 600px;
+    height: 300px;
+    margin-left: 20px;
+  }
+
+  .item-5 .box {
+    aspect-ratio: 16/7;
+  }
+
+
+
+  .item-6 {
+    width: 300px;
+    height: 200px;
+    margin-top: 150px;
+    margin-left: 10px;
+    
+  }
+
+  .item-6 .box {
+    aspect-ratio: 16/9;
+    
+  }
+
+} */
+
+
+/* Scroll Page */
+
+.container-scroll {
+  scroll-snap-type: y mandatory;
+  
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+ .one {
+  
+
+  scroll-snap-align: start;
+  
+ }
+
+
+ .two {
+  
+   scroll-snap-align: start;
+
+ }
+
+
+ .js-tilt-glare {
+  border-radius: 15px !important;
+ }
+
+ /* Led Ligts */
+
+ .led-red {
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  margin: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  border: solid 0.5px rgba(0, 0, 0, 0.329) ;
+  box-shadow: 0px 0px 3px 3px #94362a;
+ }
+
+ .led-green {
+ right: 20px;
+  top: 20px;
+  position: absolute;
+  margin: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(30, 255, 0);
+  border: solid 0.5px rgba(0, 0, 0, 0.384) ;
+  box-shadow: 0px 0px 3px 3px #518a2c;
+ }
