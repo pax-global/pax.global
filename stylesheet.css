@@ -9,6 +9,54 @@ body nav {
 
   }
 
+.one {
+  background-color: #000000;
+}
+
+
+  /* Loading page */
+
+  .loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+
+  h1 span::before {
+    font-size: 26px;
+    content: '';
+    color: #ffffff;
+    animation: profile 5s infinite;
+  }
+
+  @keyframes profile {
+    0% { content: 'Bine ați venit'}
+    20% { content: 'Welcome'}
+    40% { content: 'Bienvenue'}
+    60% { content: 'Willkommen'}
+    80% { content: 'Benvenuto'}
+    100% { content: 'Bienvenida'}
+  }
+
+      /* Hide content during loading */
+      .content {
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+      }
+  
+      /* Show content when loaded */
+      .content-loaded {
+        opacity: 1;
+      }
+
   
   .navigation {
     box-shadow: -5px -5px 15px rgba(255, 255, 255, 0.116);
@@ -45,15 +93,35 @@ body nav {
 
   @media only screen and (min-width: 1280px)  { 
     .animatie{
-    height: 800px;
+    height: 100vh;
     width: 100%;
   }
     
   }
 
-  @media only screen and (max-width: 460px) { 
+  @media only screen and (min-width: 768px)  { 
     .animatie{
-    height: 300px;
+    height: 100vh;
+    width: 100%;
+  }
+    
+  }
+
+  @media only screen and (min-width: 600px)  { 
+    .animatie{
+    height: 100vh;
+    width: 100%;
+  }
+    
+  }
+
+
+
+  @media only screen and (max-width: 500px) { 
+
+
+    .animatie{
+    height: 100vh;
     width: 100%;
   }
     .social-icon {
@@ -61,7 +129,7 @@ body nav {
       flex-direction: initial;
       justify-content: center;
       position: relative;
-      padding-bottom: 70px;
+      padding-bottom: 50px;
       right: 0;
     }
   
@@ -84,8 +152,11 @@ body nav {
 
   .projects {
     overflow: hidden;
-    padding: 20px;
-
+    padding: 40px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .navigation img {
@@ -189,138 +260,6 @@ body nav {
   }
  
  
-  
- 
-
-/* Cards display lg */
-/* @media (min-width: 1200px) {
-  .item-1 {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 50px;
-    margin-top: 100px;
-
-  }
-
-
-  .item-2 {
-    width: 400px;
-    height: 300px;
-    margin-bottom: 50px;
-    margin-left: 80px;
-  }
-  
-  .item-2 .box {
-    aspect-ratio: 16/11;
-  }
-  
-  .item-3 {
-    width: 300px;
-    height: 300px;
-    margin-top: 100px;
-    margin-left: -30px;
-  }
-
-
-
-  .item-4 {
-    width: 300px;
-    height: 300px;
-    
-
-  }
-
-
-  .item-5 {
-    width: 500px;
-    height: 300px;
-    margin-left: 30px;
-  }
-
-  .item-5 .box {
-    aspect-ratio: 16/9;
-  }
-
-
-
-  .item-6 {
-    width: 300px;
-    height: 200px;
-    margin-top: 150px;
-    margin-left: -30px;
-    
-  }
-
-  .item-6 .box {
-    aspect-ratio: 16/9;
-    
-  }
-
-}
-
-@media (min-width: 1400px) {
-  .item-1 {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-
-  }
-
-
-  .item-2 {
-    width: 400px;
-    height: 300px;
-    margin-bottom: 50px;
-    margin-left: 120px;
-  }
-  
-  .item-2 .box {
-    aspect-ratio: 16/11;
-  }
-  
-  .item-3 {
-    width: 300px;
-    height: 300px;
-    margin-top: 20px;
-    margin-left: 10px;
-  }
-
-
-
-  .item-4 {
-    width: 300px;
-    height: 300px;
-
-  }
-
-
-  .item-5 {
-    width: 600px;
-    height: 300px;
-    margin-left: 20px;
-  }
-
-  .item-5 .box {
-    aspect-ratio: 16/7;
-  }
-
-
-
-  .item-6 {
-    width: 300px;
-    height: 200px;
-    margin-top: 150px;
-    margin-left: 10px;
-    
-  }
-
-  .item-6 .box {
-    aspect-ratio: 16/9;
-    
-  }
-
-} */
 
 
 /* Scroll Page */
@@ -336,6 +275,7 @@ body nav {
   
 
   scroll-snap-align: start;
+
   
  }
 
@@ -344,6 +284,10 @@ body nav {
   
    scroll-snap-align: start;
 
+ }
+
+ footer {
+  scroll-snap-align: start;
  }
 
 
