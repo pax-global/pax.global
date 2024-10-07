@@ -119,15 +119,19 @@ body nav {
     height: 100vh;
     width: 100%;
   }
-    
+
   }
 
   @media only screen and (min-width: 768px)  { 
     .animatie{
     height: 100vh;
     width: 100%;
+
   }
-    
+  .static {
+    font-size: 50px;
+  }
+
   }
 
   @media only screen and (min-width: 600px)  { 
@@ -135,14 +139,16 @@ body nav {
     height: 100vh;
     width: 100%;
   }
-    
+
+  .static {
+    font-size: 30px;
+  }
+
   }
 
 
-
-  @media only screen and (max-width: 500px) { 
-
-
+  @media only screen and (max-width: 599px) { 
+    
     .animatie{
     height: 100vh;
     width: 100%;
@@ -155,8 +161,12 @@ body nav {
       padding-bottom: 50px;
       right: 0;
     }
-  
-    
+
+    .static {
+      font-size: 20px;
+    }
+
+
   }
 
 

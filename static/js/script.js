@@ -32,6 +32,9 @@ document.addEventListener("DOMContentLoaded", changeFaviconAndIcons);
  /* Loading page */
 
 const mySplineViewer = document.getElementById('spline-viewer');
+mySplineViewer.addEventListener('load-start', (e) => {
+	console.log('loading started', e.detail.url);
+});
 
 mySplineViewer.addEventListener('load-complete', (e) => {
 	console.log('loading completed', e.detail.url);
