@@ -1,11 +1,37 @@
 var cards = document.querySelectorAll('.box');
 
+//  Meta icon changing
+
+function isDayTime() {
+  const hour = new Date().getHours();
+  return (hour >= 6 && hour < 18);  // Consider day time from 6 AM to 6 PM
+}
+
+function changeFaviconAndIcons() {
+  const appleTouchIcon = document.querySelector('link[rel="apple-touch-icon"]');
+  const favicon32 = document.querySelector('link[sizes="32x32"]');
+  const favicon16 = document.querySelector('link[sizes="16x16"]');
+
+  if (isDayTime()) {
+    // Set the day icons
+    appleTouchIcon.setAttribute('href', '/static/images/day-apple-touch-icon.png');
+    favicon32.setAttribute('href', '/static/images/day-favicon-32x32.png');
+    favicon16.setAttribute('href', '/static/images/day-favicon-16x16.png');
+  } else {
+    // Set the night icons
+    appleTouchIcon.setAttribute('href', '/static/images/night-apple-touch-icon.png');
+    favicon32.setAttribute('href', '/static/images/night-favicon-32x32.png');
+    favicon16.setAttribute('href', '/static/images/night-favicon-16x16.png');
+  }
+}
+
+// Call the function to change the favicon and icons when the page loads
+document.addEventListener("DOMContentLoaded", changeFaviconAndIcons);
+
+
  /* Loading page */
 
 const mySplineViewer = document.getElementById('spline-viewer');
-mySplineViewer.addEventListener('load-start', (e) => {
-	console.log('loading started', e.detail.url);
-});
 
 mySplineViewer.addEventListener('load-complete', (e) => {
 	console.log('loading completed', e.detail.url);

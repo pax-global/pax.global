@@ -1,3 +1,4 @@
+
 body {
     background-color: #15191c;
     font-family: 'Times New Roman', Times, serif;
@@ -14,37 +15,65 @@ body nav {
 }
 
 
+
   /* Loading page */
 
   .loader {
     position: fixed;
-    left: 0;
-    top: 0;
     background: black;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 100;
-    text-align: center;
+    text-align: right;
     justify-content: center;
     display: flex;
     align-items: center;
   }
 
-  h1 span::before {
-    font-size: 26px;
-    content: '';
+  .static {
+    padding: 1em 1em;
     color: #ffffff;
-    animation: profile 5s infinite;
+    font-size: 50px;
+    line-height: 50px;
   }
 
-  @keyframes profile {
-    0% { content: 'Bine ați venit'}
-    20% { content: 'Welcome'}
-    40% { content: 'Bienvenue'}
-    60% { content: 'Willkommen'}
-    80% { content: 'Benvenuto'}
-    100% { content: 'Bienvenida'}
+  .static p {
+    height: 50px;
+    float: left;
+    padding-left: 15px;
+    margin: 0;
+    overflow: hidden;
   }
+  .static b {
+    float: left;
+    overflow: hidden;
+    height: 50px;
+  }
+
+  .static .rotating {
+    display: inline-block;
+    color: #d8d8d8;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    margin: 0;
+    /*animation*/
+
+    animation:move 5s;
+    animation-iteration-count:infinite;
+    animation-delay:0s;
+  }
+  @keyframes move{
+  0%  { top: 0px; }
+  20% { top: -50px; }
+  40% { top: -100px; }
+  60% { top: -150px; }
+  80% { top: -200px; }
+  }
+
+  
+
 
       /* Hide content during loading */
       .content {
@@ -147,7 +176,7 @@ body nav {
   .projects {
     overflow: hidden;
     padding: 40px;
-    min-height: 100vh;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -316,3 +345,6 @@ body nav {
   border: solid 0.5px rgba(0, 0, 0, 0.384) ;
   box-shadow: 0px 0px 3px 3px #518a2c;
  }
+
+
+ 
