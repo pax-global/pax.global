@@ -30,18 +30,12 @@ document.addEventListener("DOMContentLoaded", changeFaviconAndIcons);
 
 
  /* Loading page */
-
-const mySplineViewer = document.getElementById('spline-viewer');
-mySplineViewer.addEventListener('load-start', (e) => {
-	console.log('loading started', e.detail.url);
+ 
+$( document ).ready(function() {
+  setTimeout(function(){
+    document.querySelector("#loader").style.display = "none";
+ }, 4000); //Time before execution
 });
-
-mySplineViewer.addEventListener('load-complete', (e) => {
-	console.log('loading completed', e.detail.url);
-  document.querySelector("#loader").style.display = "none";
-});
-
-
 
 // Cards 
 
