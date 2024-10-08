@@ -127,9 +127,10 @@ body nav {
 
   @media only screen and (min-width: 1400px)  { 
 
-.container {
+.container-projects {
   padding: 70px;
 }
+
 
   }
   @media only screen and (min-width: 1280px)  { 
