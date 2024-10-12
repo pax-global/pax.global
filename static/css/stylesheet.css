@@ -60,9 +60,9 @@ body nav {
     margin: 0;
     /*animation*/
 
-    animation:move 6s;
+    animation:move 5.5s;
     animation-iteration-count:infinite;
-    animation-delay:0.5s;
+    animation-delay:1s;
   }
   @keyframes move{
   0%  { top: 0px; }
