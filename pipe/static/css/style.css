@@ -1,0 +1,115 @@
+body{
+    background-color: black !important;
+    color: white !important;
+}
+
+.nGY2GThumbnailCustomLayer{
+    border: none;
+}
+
+.nGY2Navigationbar {
+    display: flex !important;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px 0 20px 0 !important;
+
+}
+
+.nanogallery_gallerytheme_dark_my-gallery .nGY2GThumbnail{
+    background-color: black !important;
+}
+
+
+#gallery-search{
+    background-color:rgb(7, 7, 7) !important;
+    border: 1px solid rgb(90, 90, 90);
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: rgb(212, 212, 212);
+}
+
+/* .nGY2NavFilterSelectAll{
+    display: none !important;
+} */
+
+.nGY2NavigationbarItem{
+    border-radius: 15px !important;
+    padding: 5px 20px !important;
+    border: 1px solid rgb(90, 90, 90);
+}
+
+.nGY2Icon-circle-empty{
+    display: none !important;
+
+}
+
+.nGY2Icon-ok{
+    display: none !important;
+}
+
+.nGY2NavFilterSelected{
+    background-color:rgb(19, 19, 19) !important;
+    border: 1px solid white;
+}
+
+
+
+.about-button{
+    border-radius: 15px !important;
+    padding: 5px 20px !important;
+    border: 1px solid rgb(90, 90, 90) !important;
+    background-color: rgb(10, 10, 10) !important;
+    color: white !important;
+}
+
+.filter-button {
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
+    border: 1px solid rgb(90, 90, 90) !important;
+    background-color: rgb(10, 10, 10) !important;
+    color: white !important
+}
+
+.search-bar{
+    margin: 20px !important;
+    width: 400px !important;
+}
+
+.mystyle{
+    display: block;
+}
+
+#filter-bar {
+    display: none;
+    padding-top: 20px;
+}
+
+.offcanvas {
+    z-index: 9999 !important;
+}
+.offcanvas-backdrop {
+    z-index: 9998 !important;
+}
+
+.nGY2Viewer {
+    z-index: 999 !important;
+}
+
+
+.offcanvas.offcanvas-end{
+    height: 350px;
+    width: 600px !important;
+    bottom: 0 !important;
+    top:unset !important;
+    background-color: rgba(0, 0, 0, 0.596);
+    color: white;
+}
+
+.offcanvas.offcanvas-end p{
+    color: rgb(194, 194, 194) !important;
+}
+
+:fullscreen .nGY2viewerGallery {
+    display: none !important;
+}
