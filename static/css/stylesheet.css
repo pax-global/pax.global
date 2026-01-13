@@ -367,7 +367,7 @@ body nav {
  .led-green {
   right: 20px;
   top: 20px;
-  position: absolute;
+  position: relative;
   margin: 0px;
   width: 15px;
   height: 15px;
@@ -380,7 +380,7 @@ body nav {
  .led-orange {
   right: 20px;
   top: 20px;
-  position: absolute;
+  position: relative;
   margin: 0px;
   width: 15px;
   height: 15px;
