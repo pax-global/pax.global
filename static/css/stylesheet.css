@@ -279,7 +279,7 @@ body nav {
   }
 
   .theme-btn {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: smaller;
     letter-spacing: 2px;
     background: #15191c;
@@ -375,7 +375,7 @@ body nav {
   background-color: rgb(30, 255, 0);
   border: solid 0.5px rgba(0, 0, 0, 0.384) ;
   box-shadow: 0px 0px 3px 3px #518a2c;
-
+ }
 
  .led-orange {
   right: 20px;
