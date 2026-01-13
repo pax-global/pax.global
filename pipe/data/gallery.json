@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "src": "static/assets/images/lincoln_president.jpg",
+    "srct": "static/assets/images/lincoln_president.jpg",
+    "title": "Lincoln President Pipe",
+    "description": "France · 1950s · Briar Wood · Rare",
+    "tags": "France Rare Briar-Wood Photography",
+    "properties": {
+      "manufacturer": "Chamonix Workshop",
+      "model_or_name": "Lincoln President",
+      "details": "A unique piece found at an antiques fair in Paris.",
+      "acquisition_country": "France",
+      "origin_country": "France",
+      "production_date": "1950s",
+      "condition": "Good",
+      "rarity": "Rare",
+      "material": "Briar Wood",
+      "type": "Photography",
+      "external_links": "https://example.com/item1"
+    }
+  },
+  {
+    "id": 2,
+    "src": "static/assets/images/mrbrog_ro.jpg",
+    "srct": "static/assets/images/mrbrog_ro.jpg",
+    "title": "Mr. Brog Heritage",
+    "description": "Poland · 1970s · Pear Wood · Common",
+    "tags": "Poland Common Pear-Wood Photography",
+    "properties": {
+      "manufacturer": "Mr. Brog",
+      "model_or_name": "Heritage No. 21",
+      "details": "Classic design known for durability and smooth smoking experience.",
+      "acquisition_country": "Romania",
+      "origin_country": "Poland",
+      "production_date": "1970s",
+      "condition": "Good",
+      "rarity": "Common",
+      "material": "Pear Wood",
+      "type": "Photography",
+      "external_links": "https://example.com/item2"
+    }
+  },
+  {
+    "id": 3,
+    "src": "static/assets/images/unknown_desk-stand.jpg",
+    "srct": "static/assets/images/unknown_desk-stand.jpg",
+    "title": "Vintage Desk Stand Pipe",
+    "description": "Italy · 1940s · Metal · Very Rare",
+    "tags": "Italy Very-Rare Metal Sculpture",
+    "properties": {
+      "manufacturer": "Unknown Artificer",
+      "model_or_name": "Desk Stand Stand",
+      "details": "An industrial style desk stand used in administrative offices.",
+      "acquisition_country": "Romania",
+      "origin_country": "Italy",
+      "production_date": "1940s",
+      "condition": "Restored",
+      "rarity": "Very Rare",
+      "material": "Metal",
+      "type": "Sculpture",
+      "external_links": "https://example.com/item3"
+    }
+  }
+]
