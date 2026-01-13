@@ -360,12 +360,12 @@ body nav {
   height: 15px;
   border-radius: 50%;
   background-color: red;
-  border: solid 0.5px rgba(0, 0, 0, 0.329) ;
+  border: solid 0.5px rgba(0, 0, 0, 0.384) ;
   box-shadow: 0px 0px 3px 3px #94362a;
  }
 
  .led-green {
- right: 20px;
+  right: 20px;
   top: 20px;
   position: absolute;
   margin: 0px;
@@ -375,6 +375,19 @@ body nav {
   background-color: rgb(30, 255, 0);
   border: solid 0.5px rgba(0, 0, 0, 0.384) ;
   box-shadow: 0px 0px 3px 3px #518a2c;
+
+
+ .led-orange {
+  right: 20px;
+  top: 20px;
+  position: absolute;
+  margin: 0px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: rgb(255, 120, 0); 
+  border: solid 0.5px rgba(0, 0, 0, 0.384);
+  box-shadow: 0px 0px 3px 3px #8a412c;
  }
 
 
