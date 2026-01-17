@@ -6,9 +6,10 @@
     <title>Museum Black & White Gallery</title>
     
     <link rel="stylesheet" href="static/css/style.css">
+    <link href="static/css/nanogallery2.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css" rel="stylesheet"/>
     <link href="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/css/nanogallery2.min.css" rel="stylesheet">
-      <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
 
 
       <!-- This is the Bootstrap CSS -->
@@ -20,17 +21,19 @@
 <body>
 
 
-    <header>
-        <h1 class="text-center p-5">Museum Black & White Gallery</h1>
+    <header class="main-header m-0 ms-lg-4 me-lg-5 ms-md-4 me-md-5">
+        <img class="logo" src="static/assets/logo/logo-pipe.png" alt="Logo">
         
-        <div  class="text-center">
+        <div  class="buttons-container text-center">
             <button class="about-button" onclick="toggleSections('gallery-section')">Gallery</button>
-            <button class="about-button" onclick="toggleSections('about-section')">About</button>
             <button class="about-button" onclick="toggleSections('fame-section')">Hall of fame</button>
             <button class="about-button" onclick="toggleSections('restore-section')">Restoration</button>
         </div>
-        <hr class="pb-4">
+        <div  class=" text-end">
+            <button class="about-button" onclick="toggleSections('about-section')">About</button>
+        </div>
     </header>
+    <hr class="pb-4 m-0">
 
     <section>
         <div id="gallery-section" class="all-sections">
@@ -43,13 +46,15 @@
                 style="width: 300px; margin: 20px auto; display: block;">
 
                 <button class="filter-button" onclick="toggleFilters()"><i class="ri-equalizer-fill "></i></button>
+
+                <button class="filter-button" id="sort-toggle" data-order="asc"><i class="ri-sort-alphabet-asc"></i></i></button>
                 
             </div>
 
         <div class="container mb-4" id="filter-bar">
             <div class="row g-2 justify-content-center">
 
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-4 col-sm-12">
                     <select id="f-manufacturer" class="form-select filter-ctrl about-button">
                         <option value="">Manufacturer</option>
               
@@ -57,50 +62,50 @@
                 </div>
 
      
-                <div class="col-md-2">
+                <div class="col-lg-3 col-md-4 col-sm-12">
                     <select id="f-acq-country" class="form-select filter-ctrl about-button">
                         <option value="">Acquisition Country</option>
                     </select>
                 </div>
 
        
-                <div class="col-md-2">
+                <div class="col-lg-3 col-md-4 col-sm-12">
                     <select id="f-origin-country"  class="form-select filter-ctrl about-button">
                         <option value="">Origin Country</option>
                     </select>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-lg-3 col-md-4 col-sm-12">
                     <select id="f-prod-date" class="form-select filter-ctrl about-button">
                         <option value="">Production Date</option>
                     </select>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-4 col-sm-12">
                     <select id="f-condition" class="form-select filter-ctrl about-button">
                         <option value="">Condition</option>
                     </select>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-4 col-sm-12">
                     <select id="f-rarity" class="form-select filter-ctrl about-button">
                         <option value="">Rarity</option>
                     </select>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-4 col-sm-12">
                     <select id="f-material" class="form-select filter-ctrl about-button">
                         <option value="">Material</option>
                     </select>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-4 col-sm-12">
                     <select id="f-type" class="form-select filter-ctrl about-button">
                         <option value="">Type</option>
                     </select>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-lg-2 col-md-4 col-sm-12">
                     <button class="btn  w-100 about-button" onclick="resetAllFilters()" title="Resetează tot">
                         <i class="ri-refresh-line"></i> Reset
                     </button>
@@ -124,7 +129,7 @@
         </div>
     </section>
 
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd"   data-bs-scroll="true"  data-bs-backdrop="false"  aria-labelledby="offcanvasEndLabel">
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"   data-bs-scroll="true"  data-bs-backdrop="false"  aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-body">
             <div>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab assumenda ea est, eum exercitationem fugiat illum itaque laboriosam magni
@@ -142,7 +147,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/nanogallery2@3/dist/jquery.nanogallery2.min.js"></script>
+    <script src="static/js/nanogallery2.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tabler/icons@latest/iconfont/tabler-icons.min.css"></script>
@@ -157,6 +162,7 @@
 
             data.forEach(item =>{
                 item.customData = item.properties;
+                
             })
             const filters = {
                 '#f-manufacturer': 'manufacturer',
@@ -178,24 +184,23 @@
                 });
             });
 
-            
-
-            $("#my-gallery").nanogallery2({
+    
+            let my_gallery = $("#my-gallery").nanogallery2({
                 items: data,
-                thumbnailHeight: 350,
-                thumbnailWidth: 650,
+                thumbnailHeight: 300,
+                thumbnailWidth: 600,
                 galleryDisplayMode: 'grid',
                 galleryFilterTagsMode: 'AND',
-                thumbnailHoverEffect2: 'labelAppear',
+                thumbnailHoverEffect2: 'labelAppear|descriptionAppear',
                 viewerTheme : { zIndex: 999 },
                 viewerToolbar:{
                     display: true,
-                    standard:'downloadButton, label, custom1',
+                    standard:' label',
                 },
 
                 viewerTools: {
-                    topLeft: 'playPauseButton, custom2, custom3', 
-                    topRight: 'fullscreenButton, closeButton' 
+                    topLeft: 'playPauseButton, custom2, custom3, custom1 ', 
+                    topRight: 'downloadButton, fullscreenButton, closeButton' 
                 },
                 
                 viewerGallery: {
@@ -221,14 +226,14 @@
 
             function myViewerAfterHide(){
 
-                var element = document.getElementById('offcanvasEnd');
+                var element = document.getElementById('offcanvasBottom');
                 var isOpen = element.classList.remove('show');
                 
             }
 
             function myViewerEveryTime(item){
 
-                var element = document.getElementById('offcanvasEnd');
+                var element = document.getElementById('offcanvasBottom');
                 var isOpen = element.classList.contains('show');
 
                 if (isOpen) {
@@ -239,9 +244,8 @@
 
 
             function myviewerToolsCustClick(buttonName){
-
                 if (buttonName === 'custom1'){
-                    var element = document.getElementById('offcanvasEnd');
+                    var element = document.getElementById('offcanvasBottom');
                     var bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(element);
 
                     actualizeazaContinutOffcanvas(item);
@@ -255,8 +259,18 @@
 
 
             function myToolbarCustClick(buttonName, customIcon, item) {
-
+                console.log(buttonName)
                 //de cautat in  global data obiectul cu acest src
+                if (buttonName === 'custom2'){
+                    let data = $("#my-gallery").nanogallery2('data');
+                    let VOM = data.lightbox;
+
+                    $("#my-gallery").nanogallery2('option', "slideshowDelay", 500)
+                    console.log(VOM.$viewer.first('.playPauseButton'))
+
+
+                    return
+                }
 
                 function search(src, dataArray){
                     for (let i=0; i < dataArray.length; i++){
@@ -271,12 +285,13 @@
                 
            
                 if (buttonName === 'custom1'){
-                    var element = document.getElementById('offcanvasEnd');
+                    var element = document.getElementById('offcanvasBottom');
                     var bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(element);
                     actualizeazaContinutOffcanvas(item);
                     bsOffcanvas.toggle();
                         
                 }
+
 
             }
 
@@ -287,30 +302,50 @@
                 
 
                      $('.offcanvas-body').html(`
-                        <h4>${item.title || 'Fără titlu'}</h4>
-                        <p class="text-muted">${item.description || 'Fără descriere'}</p>
-                        <hr>
-                        <div class="d-flex">
-                            <ul class="list-unstyled me-5">
+
+                        <div class="row d-flex">
+                            <ul class="col-6 col-md-3 col-lg-2 list-unstyled me-0 me-lg-5">
                                 <li class="mb-2"><strong>Manufacturer:</strong> ${props.manufacturer || '-'}</li>
                                 <li class="mb-2"><strong>Model:</strong> ${props.model_or_name || '-'}</li>
+                            </ul>
+                            <ul class="col-6 col-md-3 col-lg-2 list-unstyled me-0 me-lg-5">
                                  <li class="mb-2"><strong>Material:</strong> ${props.material || '-'}</li>
                                 <li class="mb-2"><strong>Condition</strong> ${props.condition || '-'}</li>
-                                
                             </ul>
-                            <ul class="list-unstyled">
+                            <ul class="col-6 col-md-3 col-lg-2 list-unstyled me-0 me-lg-5">
                                 <li class="mb-2"><strong>Origin Country:</strong> ${props.origin_country || '-'}</li>
                                 <li class="mb-2"><strong>Production Date:</strong> ${props.production_date || '-'}</li>
+                            </ul>
+                            <ul class="col-6 col-md-3 col-lg-2 list-unstyled ">
                                 <li class="mb-2"><strong>Acquisition Country:</strong> ${props.acquisition_country || '-'}</li>
                                <li class="mb-2"><strong>Raritate:</strong> ${props.rarity || '-'}</li>
                             </ul>
+                            <ul class="col-6 col-md-6 col-lg-2 list-unstyled">
+                                <li class="mb-2"><strong>Type:</strong> ${props.type || '-'}</li>
+                                <li class="mb-2"><strong>External Links:</strong> ${props.external_links || '-'}</li>
+                            </ul>
+                            <ul class="col-6 col-md-6 list-unstyled">
+                                <li class="mb-2"><strong>Details:</strong> ${props.details || '-'}</li>
+                            </ul>
                         </div>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><strong>Details:</strong> ${props.details || '-'}</li>
-                        </ul>
                     `);
 
             }
+
+            $("#sort-toggle").on("click", function(){
+                let currentOrder = $(this).attr("data-order");
+                let newOrder = (currentOrder === "asc") ? "desc" : "asc";
+
+                $(this).attr("data-order", newOrder);
+
+                let icon = $(this).find('i');
+                if(newOrder === "asc"){
+                    icon.removeClass("ri-sort-alphabet-desc").addClass("ri-sort-alphabet-asc");
+                }else{
+                    icon.removeClass("ri-sort-alphabet-asc").addClass("ri-sort-alphabet-desc");
+                }
+                fillterGallery();              
+            })
 
  
             function fillterGallery(){
@@ -329,6 +364,20 @@
                 filteredData = filteredData.filter((item)  => {
                     return item.title.toLowerCase().includes(value)
                 });
+
+                let order = $("#sort-toggle").attr("data-order");
+
+                filteredData.sort((a, b) => {
+                    let dateA = new Date(a.date);
+                    let dateB = new Date(b.date);
+
+                    if (order === "asc") {
+                        return dateA - dateB; 
+                    } else {
+                        return dateB - dateA; 
+                    }
+                });
+
 
                 
 

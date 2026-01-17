@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", changeFaviconAndIcons);
 $( document ).ready(function() {
   setTimeout(function(){
     document.querySelector("#loader").style.display = "none";
- }, 5000); //Time before execution
+ }, 1000); //Time before execution5
 });
 
 // Cards 
