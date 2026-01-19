@@ -31,11 +31,88 @@ document.addEventListener("DOMContentLoaded", changeFaviconAndIcons);
 
  /* Loading page */
  
-$( document ).ready(function() {
-  setTimeout(function(){
-    document.querySelector("#loader").style.display = "none";
- }, 1000); //Time before execution5
-});
+let intro = 'loader';
+
+document.getElementById('start-button').addEventListener('click',() =>{
+  intro = "loader"
+
+  document.getElementById('loader').style.display = 'none';
+  document.getElementById('main').style.display = 'block';
+
+  stopWordsAnimation();
+})
+
+
+
+// Animation Loader
+
+  const label = document.querySelectorAll('.label')
+  const scoreElement = document.getElementById('score');
+  let score = 0
+
+  let FPS = 60
+
+  let width = window.innerWidth
+    , height =window.innerHeight
+
+
+  let words = Array.from(label).map(el =>{
+      
+    return {
+      element: el,
+      x:Math.random() * (width - 200),
+      y:Math.random() * (height - 50),
+      width: el.offsetWidth,  
+      height: el.offsetHeight, 
+      velX: (Math.random() > 0.5 ? 1 : -1) * (1 + Math.random() * 2), 
+      velY: (Math.random() > 0.5 ? 1 : -1) * (1 + Math.random() * 2)
+    }
+  })  
+      
+  let animationInterval = setInterval(() => {
+    
+  words.forEach(word =>{
+
+    let rect = word.element.getBoundingClientRect()
+
+    let hitX = false;
+    let hitY = false;
+
+    if (word.x + rect.width >= width || word.x <= 0) {
+        word.velX *= -1;
+        hitX = true;
+    }
+
+    if (word.y + rect.height >= height || word.y <= 0) {
+        word.velY *= -1;
+        hitY = true;
+    }
+
+
+
+    if(hitX && hitY) {
+      score++;
+      scoreElement.innerHTML = score;
+    }
+
+      word.x += word.velX;
+      word.y += word.velY;
+
+      word.element.style.left = word.x + 'px';
+      word.element.style.top = word.y + 'px';
+      
+
+    });
+
+  }, 1000 / FPS)
+    
+
+// Stop Animation Loader
+
+function stopWordsAnimation(){
+  clearInterval(animationInterval);
+}
+
 
 // Cards 
 
