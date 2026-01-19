@@ -9217,10 +9217,8 @@
     
     // Actions of the button/elements
     function ViewerToolsAction(e) {
-        console.log(111111111)
       // delay to avoid twice handling on smartphone/tablet (both touchstart click events are fired)
       if( (new Date().getTime()) - G.timeLastTouchStart < 300 ) { return; }
-      console.log(2222222)
       G.timeLastTouchStart = new Date().getTime();
       
       var $this = $(this);
@@ -9244,6 +9242,14 @@
         case 'custom2':
           e.stopPropagation();
           SlideshowToggleCustom2();
+          break;
+        case 'custom3':
+          e.stopPropagation();
+          SlideshowToggleCustom3();
+          break;
+        case 'custom4':
+          e.stopPropagation();
+          SlideshowToggleCustom4();
           break;
         case 'zoomIn':
           StopPropagationPreventDefault(e);
@@ -9494,16 +9500,56 @@
     // toggle slideshow mode on/off
     // AISHA
     function SlideshowToggleCustom2(){
-        G.VOM.slideshowDelay = 300;
+        G.VOM.slideshowDelay = 10000;
       if( G.VOM.playSlideshow ) {
         window.clearTimeout(G.VOM.playSlideshowTimerID);
         G.VOM.playSlideshow = false;
-        G.VOM.$viewer.find('.custom2').html(G.O.icons.viewerPlay);
+        G.VOM.$viewer.find('.custom2').html('10"<i class="ri-play-fill"></i>');
+        G.VOM.$viewer.find('.custom3').html('30"<i class="ri-play-fill"></i>');
+        G.VOM.$viewer.find('.custom4').html('60"<i class="ri-play-fill"></i>');
+    
       }
       else {
         G.VOM.playSlideshow = true;
         DisplayNextMedia();
-        G.VOM.$viewer.find('.custom2').html(G.O.icons.viewerPause);
+        G.VOM.$viewer.find('.custom2').html('10"<i class="ri-pause-fill"></i>');
+      }
+    }
+
+    // toggle slideshow mode on/off
+    // AISHA
+    function SlideshowToggleCustom3(){
+        G.VOM.slideshowDelay = 30000;
+      if( G.VOM.playSlideshow ) {
+        window.clearTimeout(G.VOM.playSlideshowTimerID);
+        G.VOM.playSlideshow = false;
+        G.VOM.$viewer.find('.custom3').html('30"<i class="ri-play-fill"></i>');
+        G.VOM.$viewer.find('.custom2').html('10"<i class="ri-play-fill"></i>');
+        G.VOM.$viewer.find('.custom4').html('60"<i class="ri-play-fill"></i>');
+      }
+      else {
+        G.VOM.playSlideshow = true;
+        DisplayNextMedia();
+        G.VOM.$viewer.find('.custom3').html('30"<i class="ri-pause-fill"></i>');
+        
+      }
+    }
+
+    // toggle slideshow mode on/off
+    // AISHA
+    function SlideshowToggleCustom4(){
+        G.VOM.slideshowDelay = 60000;
+      if( G.VOM.playSlideshow ) {
+        window.clearTimeout(G.VOM.playSlideshowTimerID);
+        G.VOM.playSlideshow = false;
+        G.VOM.$viewer.find('.custom4').html('60"<i class="ri-play-fill"></i>');
+        G.VOM.$viewer.find('.custom2').html('30"<i class="ri-play-fill"></i>');
+        G.VOM.$viewer.find('.custom3').html('30"<i class="ri-play-fill"></i>');
+      }
+      else {
+        G.VOM.playSlideshow = true;
+        DisplayNextMedia();
+        G.VOM.$viewer.find('.custom4').html('60"<i class="ri-pause-fill"></i>');
       }
     }
 
