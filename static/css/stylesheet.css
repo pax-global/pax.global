@@ -268,7 +268,9 @@ body nav {
     }
 
   .ui-container{
-    bottom: 70px;
+    bottom: 50px;
+    left: 15px;
+    right: 15px;
     }
 
 
@@ -421,7 +423,7 @@ body nav {
   scroll-snap-type: y mandatory;
   
   overflow-y: scroll;
-  height: 100vh;
+  height: 100%;
 }
 
  .one {
