@@ -44,6 +44,7 @@ body nav {
   font-size: 34px;
   color: white;
   white-space: nowrap;
+  line-height: 30px;
 }
 
 .ui-container {
@@ -68,7 +69,7 @@ body nav {
 #start-button {
   pointer-events: auto; 
   background: transparent;
-  color: white;
+  color:  #00FF00;
   border: 1px solid #00FF00;
   padding: 5px 20px;
   font-family: serif;
