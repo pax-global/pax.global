@@ -35,12 +35,35 @@ let intro = 'loader';
 
 document.getElementById('start-button').addEventListener('click',() =>{
   intro = "loader"
+  let main = document.getElementById('main')
 
+  setTimeout(() => {
+  main.classList.add('delay');
   document.getElementById('loader').style.display = 'none';
+  stopWordsAnimation();
+  },1000);
   document.getElementById('main').style.display = 'block';
 
-  stopWordsAnimation();
 })
+
+
+
+
+window.addEventListener('load',()=>{
+  const join = document.getElementById('start-button')
+
+
+
+});
+
+
+window.addEventListener('load',()=>{
+  document.querySelectorAll('.fade-in').forEach((el, index) => {
+    setTimeout(() => {
+      el.classList.add('active');
+    },index * 150);
+  });
+});
 
 
 
@@ -68,6 +91,7 @@ document.getElementById('start-button').addEventListener('click',() =>{
       velY: (Math.random() > 0.5 ? 1 : -1) * (1 + Math.random() * 2)
     }
   })  
+
       
   let animationInterval = setInterval(() => {
     
@@ -105,6 +129,11 @@ document.getElementById('start-button').addEventListener('click',() =>{
     });
 
   }, 1000 / FPS)
+
+
+
+
+
     
 
 // Stop Animation Loader
