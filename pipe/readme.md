@@ -19,17 +19,18 @@ If you want to contribute to the collection you can either donate old/unused pip
 ```json
 {
     "title": "Lincoln President Pipe",
-    "description": "France · 1950s · Briar Wood · Rare",
     "properties": {
       "manufacturer": "Chamonix Workshop",
       "model_or_name": "Lincoln President",
       "details": "A unique piece found at an antiques fair in Paris.",
       "acquisition_country": "France",
       "origin_country": "France",
-      "production_date": "1950s",
+      "production_date": "1950",
       "rarity": "Rare",
       "material": "Briar Wood",
       "external_links": "https://example.com/item1"
     }
 ```
+
+I promise i did not modify the exif data...
 
