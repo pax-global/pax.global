@@ -1,11 +1,11 @@
-This is the code behind https://pax.global/pipe. Based on the information i have, the collection is:
+This is the code behind https://pax.global/pipe. Based on the information i have, the collection is the:
 
 
->🥇the largest pipe collection in Bucovina
+>🥇largest pipe collection in Bucovina
 
->🥇the only online pipe collection in Romania
+>🥇only online pipe collection in Romania
 
->🥇the only community maintained pipe collection in the world
+>🥇only community maintained pipe collection in the world
 
 # 
 
