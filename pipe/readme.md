@@ -20,14 +20,14 @@ If you want to contribute to the collection you can either donate old/unused pip
 {
     "title": "Lincoln President Pipe",
     "properties": {
-      "manufacturer": "Chamonix Workshop",
-      "model_or_name": "Lincoln President",
+      "manufacturer": "Lincoln",
+      "model_or_name": "President",
       "details": "A unique piece found at an antiques fair in Paris.",
       "acquisition_country": "France",
       "origin_country": "France",
       "production_date": "1950",
-      "rarity": "Rare",
-      "material": "Briar Wood",
+      "rarity": "Rare", ## specify whether it is limited edition/handmade
+      "material": "Briar",
       "external_links": "https://example.com/item1"
     }
 ```

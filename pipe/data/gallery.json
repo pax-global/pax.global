@@ -64,6 +64,74 @@
       "type": "Pipe",
       "external_links": "https://brogshop.pl/en_US/p/World-Championships-Bucharest-2023-tournament-pipe/1578"
     }
+  },
+    {
+    "id": 4,
+    "src": "static/assets/images/matrioska.jpg",
+    "srct": "static/assets/images/matrioska.jpg",
+    "date": "2026-02-18",
+    "title": "Matrioska",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Unknown",
+      "details": "There's an issue with one of the pictures. Can you spot it?",
+      "acquisition_country": "Romania",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "material": "Wood",
+      "type": "Accessory",
+      "external_links": ""
+    }
+  },
+
+    {
+    "id": 5,
+    "src": "static/assets/images/drgrabow_eldorado.jpg",
+    "srct": "static/assets/images/drgrabow_eldorado.jpg",
+    "date": "2026-02-18",
+    "title": "Eldorado",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Dr. Grabow",
+      "model_or_name": "Eldorado",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "USA",
+      "production_date": "1960",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "material": "Briar",
+      "type": "Pipe",
+      "external_links": "https://pipedia.org/wiki/Dr._Grabow_Models_(Series,Line)_Names_Through_the_Years"
+    }
+  },
+
+    {
+    "id": 6,
+    "src": "static/assets/images/unknown_1",
+    "srct": "static/assets/images/unknown_1",
+    "date": "2026-02-18",
+    "title": "Wooden Desk Stand",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Unknown",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "France",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "material": "Cherry Wood",
+      "type": "Pipe",
+      "external_links": ""
+    }
   }
 
 ]
