@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museum Black & White Gallery</title>
-    
+
     <link rel="stylesheet" href="static/css/style.css">
     <link href="static/css/nanogallery2.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/css/tabler.min.css" rel="stylesheet"/>
@@ -15,7 +15,8 @@
       <!-- This is the Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
-    
+
+
 
 </head>
 <body>
@@ -23,7 +24,7 @@
 
     <header class="main-header m-0 ms-lg-4 me-lg-5 ms-md-4 me-md-5">
         <img class="logo" src="static/assets/logo/logo-pipe.png" alt="Logo">
-        
+
         <div  class="buttons-container text-center">
             <button class="about-button" onclick="toggleSections('gallery-section')">Gallery</button>
             <button class="about-button" onclick="toggleSections('fame-section')">Hall of fame</button>
@@ -33,7 +34,7 @@
               <a href="https://pax.global/" target="_blank" rel="noopener noreferrer" class="theme-btn">
                   <button class="about-button">Return Home</button>
                 </a>
-            
+
         </div>
     </header>
     <hr class="pb-4 m-0">
@@ -51,7 +52,7 @@
                 <button class="filter-button" onclick="toggleFilters()"><i class="ri-equalizer-fill "></i></button>
 
                 <button class="filter-button" id="sort-toggle" data-order="asc"><i class="ri-sort-alphabet-asc"></i></i></button>
-                
+
             </div>
 
         <div class="container mb-4" id="filter-bar">
@@ -60,18 +61,18 @@
                 <div class="col-lg-2 col-md-4 col-sm-12">
                     <select id="f-manufacturer" class="form-select filter-ctrl about-button">
                         <option value="">Manufacturer</option>
-              
+
                     </select>
                 </div>
 
-     
+
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <select id="f-acq-country" class="form-select filter-ctrl about-button">
                         <option value="">Acquisition Country</option>
                     </select>
                 </div>
 
-       
+
                 <div class="col-lg-3 col-md-4 col-sm-12">
                     <select id="f-origin-country"  class="form-select filter-ctrl about-button">
                         <option value="">Origin Country</option>
@@ -110,27 +111,99 @@
 
                 <div class="col-lg-2 col-md-4 col-sm-12">
                     <button class="btn  w-100 about-button" onclick="resetAllFilters()" title="Resetează tot">
-                        <i class="ri-refresh-line"></i> Reset
+                        <i class="ri-refresh-line"></i> Clear Filters
                     </button>
                 </div>
             </div>
         </div>
 
             <div id="my-gallery"></div>
-            
+
 
 
         </div>
-        <div id="about-section" class="all-sections" style="display:none;">
-            <h1 class="text-center p-5">About</h1>
-        </div>
+
         <div id="fame-section" class="all-sections" style="display:none;">
             <h1 class="text-center p-5">Hall of fame</h1>
         </div>
-        <div id="restore-section" class="all-sections" style="display:none;">
-            <h1 class="text-center p-5">Restoration</h1>
+
+        <div id="about-section" class="all-sections" style="display:none; margin: 5%;">
+            <h1 style="text-align: center;">WHY</h1>
+            <p class="indent-p" style="margin-top: 3%;"><strong>One of the reasons</strong> is that i simply wanted to resurface a cultural phenomenon which is currently burried in the history. Someone asked me why I restore pipes and my answer was: <q>I do not restore pipes, i restore the past</q>. At this point in time, the past looks more promising than the future.</p>
+
+            <p class="indent-p"><strong>Another reason</strong> is that i am intrigued about the infinite variety of shapes and material choice. I find it quite challenging that pipe makers start from the same block of wood and end up creating unique pieces (especially since some of the pipes are handmade and sometimes no power tools are involved)</p>
+
+            <p class="indent-p">Although in Romania the pipe culture was not a big phenomenon, the oldest archaeological sites in which clay pipes were discovered happened to be in Bucovina (hence <strong>another reason</strong> i decided to start this collection). This is documented by <a href="https://www.researchgate.net/profile/Ionut-Cosmin-Codrea?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB1YmxpY2F0aW9uIn19">Ionuţ-Cosmin Codrea</a> in <a href="https://www.researchgate.net/publication/370471461_Obiceiul_fumatului_in_Transilvania_secolele_XVII-XIX_Pipe_descoperite_in_cetatea_Deva_The_habit_of_smoking_in_Transylvania_17th-19th_centuries_Tobacco_pipes_discovered_in_Deva_fortress">this</a> paper:</p>
+
+            <blockquote>Cele mai vechi săpături arheologie de pe actualul teritoriu al României în cadrul cărora au fost descoperite pipe de lut aparţin lui K. A. Romstorfer, arhitect austriac implicat în mai multe proiecte de restaurare a unor monumente din zona Moldovei. Cercetarea pe care a realizat-o în perioada 1895–1904 în cetatea Sucevei a fost publicată „întocmai cum a fost alcătuită, cu desenurile, vederile şi planşele, lucrate, luate şi întocmite de autor” în anul 1913.</blockquote>
+
+            <p style="text-align: center;">One of the largest pipe collection in Romania belongs to the <a href="https://www.mcdr.ro/index.php/ro/">Dacians and Romans Civilzation Museum</a> in Deva.</p>
+
+            <blockquote>Colecția de Pipe a Muzeului Civilizației Dacice și Romane din Deva este formată din aproape 700 de piese, dintre care marea majoritate (638 de pipe) provine din săpăturile arheologice realizate în cetatea Deva.</blockquote>
+
+            <p class="indent-p">Romanian pipe culture continues to linger on thanks to dedicated pipe shops (such as <a href="https://pipemagazin.ro">pipemagazin</a>), artisan pipe makers (such as <a href="https://www.atelierrolando.com/rolando">Rolando Negoita</a>) and pipe clubs (such as <a href="https://pipaclub.ro">pipaclub</a>).</p>
+            <h1 style="text-align: center;">WHAT</h1>
+            <p style="margin-top: 3%;">This is not meant to be a high quality collection. Instead this collection aims to:</p>
+            <ul>
+                <li>tap into art & history</li>
+                <li>explore the craftmanship and variety</li>
+                <li>expose Fujifilm X20 limits in difficult light conditions (i intentionally did not choose a "newer/better" camera for the collection because i do not think history and digital are always a great fit together - but i still needed a way to create a collection which you can actually view)</li>
+                <li>showcase the differences between color photography and B&W photography</li>
+                <li>make you understand that you can improvise a low budget studio without professional gear and without post-edits (i only used a piece of cloth on a table, multiple lighting sources such as lamps and natural light and scented sticks for creating smoke effect)</li>
+                <p>Based on the information i have, this is the:</p>
+                <blockquote>
+                    🥇 the largest pipe collection in Bucovina
+                    <br>
+                    🥇 the only online pipe collection in Romania
+                    <br>
+                    🥇 the only community maintained pipe collection in the world
+                </blockquote>
+            </ul>
+            <h1 style="text-align: center;">HOW</h1>
+            <p style="margin-top: 3%;">Each used pipe follows a 3 day reastauration process:</p>
+
+            <ol type="I">
+                <li><strong>Regular Cleaning</strong> - this step involves evaluating the pipe condition to determine the necessary actions. The pipe will undergo deep cleaning which will fix major issues such as:</li><br>
+                <ul>
+                    <li>excess cake/carbonification inside the chamber</li>
+                    <li>carbonification on the bowl rim</li>
+                    <li>dust/dirt on the outside of the bowl</li>
+                    <li>airway blockage inside the shank or the stem </li>
+                    <li>cracked/scratched mouthpiece</li>
+                </ul><br>
+                <p>I use walnut oil to hydrate the wood. Walnut oil also acts as a primer for applying bee wax and carnauba wax in the following steps. I fill the chamber and the shank with cotton and pour romanian whiskey with greek flavor. Whiskey will disolve oil and tar that penetrated the inside of the bowl, while cotton will attract the disolved substances.</p>
+
+                <p>&#9888; I do not use izopropilic alcohol for cleaning the inside of the bowl and I do not recommend using it as this might have negative health impact or affect the wood, leading to potential cracks. Also, for cleaning the shank and inside of the stem I recommend using dedicated pipe cleaning solution only instead of izopropilic alcohol.</p>
+                <li><strong>Deep Cleaning</strong> - after regular cleaning phase is finished, I evaluate whether any major issues are still present and if not the intermediary phase starts. In this phase I fix issues such as:
+                </li><br>
+                <ul>
+                    <li>stinger rust</li>
+                    <li>stem oxidation</li>
+                    <li>additional dust removal or small residues</li>
+                    <li>tenon too loose or too tight</li>
+                </ul><br>
+                <p>Afterwards, I polish the pipe with natural bee wax.</p>
+
+                <p>&#9888; I do not recommend using industrial cleaning substances in this step as this might result in negative impact on your health. I use natural ingredients only.</p>
+
+                <li><strong>Final Cleaning</strong> - after intermediary cleaning phase is finished, I evaluate wether any issues are still present and if not I light up the the pipe and evaluate the experience</li><br>
+                <ul>
+                    <li>I proceed to regular cleaning once more</li>
+                    <li>I apply a final polish with carnauba wax</li>
+                    <li>I evaluate whether the pipe will be part of the collection (pipes with major issues such as cracked bowls do not make it in the collection and pipes which need additional restoration are postponed) and proceed to photo shooting</li>
+                </ul><br>
+                <p>&#9888; I do not redye the pipe as this will result in a new pipe altogether. I preserve the initial color and only buff it and polish it. </p>
+            </ol>
+
+            <h2>Restauration Photos<h2>
+
+
         </div>
+
+
     </section>
+
+
 
     <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom"   data-bs-scroll="true"  data-bs-backdrop="false"  aria-labelledby="offcanvasBottomLabel">
         <div class="offcanvas-body">
@@ -165,7 +238,7 @@
 
             data.forEach(item =>{
                 item.customData = item.properties;
-                
+
             })
             const filters = {
                 '#f-manufacturer': 'manufacturer',
@@ -181,13 +254,13 @@
             Object.keys(filters).forEach(selector => {
                 const propName = filters[selector];
                 let uniqueValues = [...new Set(data.map(item => item.properties[propName]))].sort();
-                
+
                 uniqueValues.forEach(val => {
                     if(val) $(selector).append(`<option value="${val}">${val}</option>`);
                 });
             });
 
-    
+
             let my_gallery = $("#my-gallery").nanogallery2({
                 items: data,
                 thumbnailHeight: 300,
@@ -202,23 +275,23 @@
                 },
 
                 viewerTools: {
-                    topLeft: 'custom2, custom3, custom4, custom1 ', 
-                    topRight: 'downloadButton, fullscreenButton, closeButton' 
+                    topLeft: 'custom2, custom3, custom4, custom1 ',
+                    topRight: 'downloadButton, fullscreenButton, closeButton'
                 },
-                
+
                 viewerGallery: {
                     display: false
                 },
 
                 slideshowDelay:3000,
- 
 
-                fnImgDisplayed: myViewerEveryTime, 
+
+                fnImgDisplayed: myViewerEveryTime,
                 fnImgToolbarCustClick: myToolbarCustClick,
                 fnGalleryLayoutApplied: myViewerAfterHide,
 
 
-                icons: { 
+                icons: {
                     viewerCustomTool1: '<i class="ri-info-i" style="font-size:26px"></i>',
                     viewerCustomTool2: '10"<i class="ri-play-fill"></i>',
                     viewerCustomTool3: '30"<i class="ri-play-fill"></i>',
@@ -226,13 +299,13 @@
                 }
             });
 
-            
+
 
             function myViewerAfterHide(){
 
                 var element = document.getElementById('offcanvasBottom');
                 var isOpen = element.classList.remove('show');
-                
+
             }
 
             function myViewerEveryTime(item){
@@ -243,7 +316,7 @@
                 if (isOpen) {
                     actualizeazaContinutOffcanvas(item);
                 }
-                
+
             }
 
 
@@ -256,7 +329,7 @@
                     bsOffcanvas.toggle();
 
                     console.log("ceva",item)
-                        
+
                 }
             }
 
@@ -286,14 +359,14 @@
 
                 const currentItem = search(item.src, globalData)
 
-                
-           
+
+
                 if (buttonName === 'custom1'){
                     var element = document.getElementById('offcanvasBottom');
                     var bsOffcanvas = bootstrap.Offcanvas.getOrCreateInstance(element);
                     actualizeazaContinutOffcanvas(item);
                     bsOffcanvas.toggle();
-                        
+
                 }
 
 
@@ -303,7 +376,7 @@
             function actualizeazaContinutOffcanvas(item){
                 const props = item.customData;
                  console.log("Obiectul item complet:", item.customData);
-                
+
 
                      $('.offcanvas-body').html(`
 
@@ -348,10 +421,10 @@
                 }else{
                     icon.removeClass("ri-sort-alphabet-asc").addClass("ri-sort-alphabet-desc");
                 }
-                fillterGallery();              
+                fillterGallery();
             })
 
- 
+
             function fillterGallery(){
                 let filteredData = globalData.filter((item) => true);
                 var value = $("#gallery-search").val().toLowerCase();
@@ -376,14 +449,14 @@
                     let dateB = new Date(b.date);
 
                     if (order === "asc") {
-                        return dateA - dateB; 
+                        return dateA - dateB;
                     } else {
-                        return dateB - dateA; 
+                        return dateB - dateA;
                     }
                 });
 
 
-                
+
 
 
 
@@ -402,23 +475,23 @@
                     },
 
                     viewerTools: {
-                        topLeft: 'playPauseButton, custom2, custom3', 
-                        topRight: 'fullscreenButton, closeButton' 
+                        topLeft: 'playPauseButton, custom2, custom3',
+                        topRight: 'fullscreenButton, closeButton'
                     },
-                    
+
                     viewerGallery: {
                         display: false
                     },
 
                     slideshowDelay:3000,
-    
 
-                    fnImgDisplayed: myViewerEveryTime, 
+
+                    fnImgDisplayed: myViewerEveryTime,
                     fnImgToolbarCustClick: myToolbarCustClick,
                     fnGalleryLayoutApplied: myViewerAfterHide,
 
 
-                    icons: { 
+                    icons: {
                         viewerCustomTool1: '<i class="ri-info-i" style="font-size:26px"></i>',
                         viewerCustomTool2: '2"<i class="ri-play-fill"></i>',
                         viewerCustomTool3: '3"<i class="ri-play-fill"></i>'
@@ -432,19 +505,19 @@
             $('.filter-ctrl').on('change', function() {
                 fillterGallery()
             });
-            
 
-            $("#gallery-search").on("keyup", function() {              
+
+            $("#gallery-search").on("keyup", function() {
                 fillterGallery()
             });
 
-    
+
 
             window.resetAllFilters = function() {
                 $('.filter-ctrl').val('');
                 $("#gallery-search").val('');
                 $("#my-gallery").nanogallery2('filter', '');
-                
+
                 $("#my-gallery").nanogallery2('destroy');
                 $("#my-gallery").nanogallery2({
                     items: data,
@@ -460,23 +533,23 @@
                     },
 
                     viewerTools: {
-                        topLeft: 'playPauseButton, custom2, custom3', 
-                        topRight: 'fullscreenButton, closeButton' 
+                        topLeft: 'playPauseButton, custom2, custom3',
+                        topRight: 'fullscreenButton, closeButton'
                     },
-                    
+
                     viewerGallery: {
                         display: false
                     },
 
                     slideshowDelay:3000,
-    
 
-                    fnImgDisplayed: myViewerEveryTime, 
+
+                    fnImgDisplayed: myViewerEveryTime,
                     fnImgToolbarCustClick: myToolbarCustClick,
                     fnGalleryLayoutApplied: myViewerAfterHide,
 
 
-                    icons: { 
+                    icons: {
                         viewerCustomTool1: '<i class="ri-info-i" style="font-size:26px"></i>',
                         viewerCustomTool2: '2"<i class="ri-play-fill"></i>',
                         viewerCustomTool3: '3"<i class="ri-play-fill"></i>'

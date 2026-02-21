@@ -1,9 +1,9 @@
-body{
+body {
     background-color: black !important;
     color: white !important;
 }
 
-.nGY2GThumbnailCustomLayer{
+.nGY2GThumbnailCustomLayer {
     border: none;
 }
 
@@ -13,16 +13,14 @@ body{
     flex-wrap: wrap;
     gap: 8px;
     padding: 10px 0 20px 0 !important;
-
 }
 
-.nanogallery_gallerytheme_dark_my-gallery .nGY2GThumbnail{
+.nanogallery_gallerytheme_dark_my-gallery .nGY2GThumbnail {
     background-color: black !important;
 }
 
-
-#gallery-search{
-    background-color:rgb(7, 7, 7) !important;
+#gallery-search {
+    background-color: rgb(7, 7, 7) !important;
     border: 1px solid rgb(90, 90, 90);
     padding: 10px 15px;
     border-radius: 20px;
@@ -33,29 +31,26 @@ body{
     display: none !important;
 } */
 
-.nGY2NavigationbarItem{
+.nGY2NavigationbarItem {
     border-radius: 15px !important;
     padding: 5px 20px !important;
     border: 1px solid rgb(90, 90, 90);
 }
 
-.nGY2Icon-circle-empty{
-    display: none !important;
-
-}
-
-.nGY2Icon-ok{
+.nGY2Icon-circle-empty {
     display: none !important;
 }
 
-.nGY2NavFilterSelected{
-    background-color:rgb(19, 19, 19) !important;
+.nGY2Icon-ok {
+    display: none !important;
+}
+
+.nGY2NavFilterSelected {
+    background-color: rgb(19, 19, 19) !important;
     border: 1px solid white;
 }
 
-
-
-.about-button{
+.about-button {
     border-radius: 15px !important;
     padding: 5px 20px !important;
     border: 1px solid rgb(90, 90, 90) !important;
@@ -72,13 +67,12 @@ body{
     margin: 10px !important;
 }
 
-.search-bar{
+.search-bar {
     margin: 10px !important;
     width: 400px !important;
 }
 
-
-.mystyle{
+.mystyle {
     display: block;
 }
 
@@ -98,31 +92,30 @@ body{
     z-index: 999 !important;
 }
 
-
-.offcanvas.offcanvas-bottom{
+.offcanvas.offcanvas-bottom {
     font-size: 12px;
     height: 110px !important;
     width: 100% !important;
     bottom: 50px !important;
-    top:unset !important;
+    top: unset !important;
     background-color: rgba(0, 0, 0, 0.596);
     color: white;
 }
 
-.offcanvas.offcanvas-bottom p{
+.offcanvas.offcanvas-bottom p {
     color: rgb(194, 194, 194) !important;
 }
 
-.offcanvas-body p{
+.offcanvas-body p {
     margin: 0 !important;
 }
 
-.offcanvas-body hr{
-    margin-bottom:  10px !important;
-    margin-top:  10px !important;
+.offcanvas-body hr {
+    margin-bottom: 10px !important;
+    margin-top: 10px !important;
 }
 
-.list-unstyled{
+.list-unstyled {
     margin-bottom: 0;
 }
 
@@ -130,15 +123,14 @@ body{
     display: none !important;
 } */
 
-.main-header{
+.main-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 100px;
 }
 
-
-.logo{
+.logo {
     height: 100px;
 }
 
@@ -148,20 +140,18 @@ body{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
     .logo {
-    position: relative;
-    height: 100px;
-    width: 100px;
-    padding-top: 20px;
-    }
-
-    .buttons-container{
+        position: relative;
+        height: 100px;
+        width: 100px;
         padding-top: 20px;
-
     }
-    .about-button{
+
+    .buttons-container {
+        padding-top: 20px;
+    }
+    .about-button {
         margin-bottom: 5px;
     }
 
@@ -173,37 +163,44 @@ body{
     .toolbarContainer {
         bottom: unset !important;
         top: 70px !important;
-
     }
 
-    .offcanvas.offcanvas-bottom{
-    height: 180px !important;
-
+    .offcanvas.offcanvas-bottom {
+        height: 180px !important;
     }
-
 }
 
-
-
-.nGY2ViewerMedia{
+.nGY2ViewerMedia {
     max-width: 800px !important;
     max-height: 500px !important;
 }
 
-.toolbarContainer .nGEvent{
+.toolbarContainer .nGEvent {
     bottom: unset !important;
 }
 .toolbarContainer {
     bottom: unset !important;
     top: 25px;
-
 }
 
-.nGY2 .toolbarBackground{
+.nGY2 .toolbarBackground {
     background: none !important;
 }
 
-.description{
+.description {
     display: none !important;
 }
 
+.indent-p {
+    text-indent: 40px;
+}
+
+blockquote {
+    background: #1c1c1c;
+    border-left: 3px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+}
+blockquote p {
+    display: inline-block;
+}
