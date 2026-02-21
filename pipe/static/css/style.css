@@ -96,10 +96,19 @@ body {
     font-size: 12px;
     height: 110px !important;
     width: 100% !important;
-    bottom: 50px !important;
-    top: unset !important;
+    top: 60px !important;
+    bottom: unset !important;
     background-color: rgba(0, 0, 0, 0.596);
     color: white;
+}
+
+.offcanvas.offcanvas-bottom:not(.show):not(.showing) {
+    transform: translateY(-100%) !important;
+}
+
+.offcanvas.offcanvas-bottom.show,
+.offcanvas.offcanvas-bottom.showing {
+    transform: translateY(0) !important;
 }
 
 .offcanvas.offcanvas-bottom p {
@@ -167,6 +176,7 @@ body {
 
     .offcanvas.offcanvas-bottom {
         height: 180px !important;
+        top: 110px !important;
     }
 }
 
