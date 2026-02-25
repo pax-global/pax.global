@@ -214,3 +214,18 @@ blockquote {
 blockquote p {
     display: inline-block;
 }
+
+.rotationTable {
+    background-color: black;
+    border-collapse: collapse;
+}
+.rotationTable th {
+    background-color: #000;
+    color: white;
+    width: 50%;
+}
+.rotationTable td,
+.myTable th {
+    padding: 5px;
+    border: 1px solid white;
+}
