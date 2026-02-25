@@ -26,11 +26,11 @@ If you want to contribute to the collection you can either donate old/unused pip
       "acquisition_country": "France",
       "origin_country": "France",
       "production_date": "1950",
-      "rarity": "Rare", ## specify whether it is limited edition/handmade
+      "rarity": "Rare", ## specify whether it is limited edition
+      "Handmade": "Yes/No"
       "material": "Briar",
       "external_links": "https://example.com/item1"
     }
 ```
 
 I promise i did not modify the exif data...
-

@@ -16,6 +16,7 @@
       "production_date": "Unknown",
       "condition": "Used",
       "rarity": "Unknown",
+      "handmade": "Unknown",
       "material": "Cherry Wood",
       "type": "Accessory",
       "external_links": ""
@@ -38,6 +39,7 @@
       "production_date": "1978",
       "condition": "Used",
       "rarity": "Limited - Tournament Pipe",
+      "handmade": "No",
       "material": "Briar",
       "type": "Pipe",
       "external_links": "https://pipeclub.sk/ecp-bremen,-deutschland-1978-article-957-326.aspx"
@@ -60,12 +62,13 @@
       "production_date": "2023",
       "condition": "Unused",
       "rarity": "Limited - Tournament Pipe",
+      "handmade": "No",
       "material": "Briar",
       "type": "Pipe",
       "external_links": "https://brogshop.pl/en_US/p/World-Championships-Bucharest-2023-tournament-pipe/1578"
     }
   },
-    {
+  {
     "id": 4,
     "src": "static/assets/images/matrioska.jpg",
     "srct": "static/assets/images/matrioska.jpg",
@@ -82,13 +85,14 @@
       "production_date": "Unknown",
       "condition": "Used",
       "rarity": "Unknown",
+      "handmade": "Unknown",
       "material": "Wood",
       "type": "Accessory",
       "external_links": ""
     }
   },
 
-    {
+  {
     "id": 5,
     "src": "static/assets/images/drgrabow_eldorado.jpg",
     "srct": "static/assets/images/drgrabow_eldorado.jpg",
@@ -111,7 +115,7 @@
     }
   },
 
-    {
+  {
     "id": 6,
     "src": "static/assets/images/unknown_1.jpg",
     "srct": "static/assets/images/unknown_1.jpg",
@@ -128,10 +132,10 @@
       "production_date": "Unknown",
       "condition": "Used",
       "rarity": "Unknown",
+      "handmade": "Unknown",
       "material": "Cherry Wood",
       "type": "Pipe",
       "external_links": ""
     }
   }
-
 ]
