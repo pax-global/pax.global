@@ -222,9 +222,24 @@ blockquote p {
 .rotationTable th {
     background-color: #000;
     color: white;
-    width: 30%;
+    width: 45%;
 }
 .rotationTable td,
+.myTable th {
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.hofTable {
+    background-color: black;
+    border-collapse: collapse;
+}
+.hofTable th {
+    background-color: #000;
+    color: white;
+    width: 30%;
+}
+.hofTable td,
 .myTable th {
     padding: 5px;
     border: 1px solid white;
