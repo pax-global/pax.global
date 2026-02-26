@@ -26,7 +26,7 @@ If you want to contribute to the collection you can either donate old/unused pip
       "acquisition_country": "France",
       "origin_country": "France",
       "production_date": "1950",
-      "rarity": "Rare", ## specify whether it is limited edition
+      "rarity": "Limited - Tournament Pipe",
       "Handmade": "Yes/No"
       "material": "Briar",
       "external_links": "https://example.com/item1"
