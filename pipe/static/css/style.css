@@ -233,6 +233,7 @@ blockquote p {
 .hofTable {
     background-color: black;
     border-collapse: collapse;
+    margin: 0px auto;
 }
 .hofTable th {
     background-color: #000;
