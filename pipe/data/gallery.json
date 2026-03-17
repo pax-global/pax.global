@@ -114,5 +114,100 @@
       "type": "Pipe",
       "external_links": "https://pipedia.org/wiki/Dr._Grabow_Models_(Series,Line)_Names_Through_the_Years"
     }
+  },
+  {
+    "id": 6,
+    "src": "static/assets/images/unknown_1.jpg",
+    "srct": "static/assets/images/unknown_1.jpg",
+    "date": "2026-02-18",
+    "title": "Rustic Pipe",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Unknown",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "France",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Cherry Wood",
+      "type": "Pipe",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 7,
+    "src": "static/assets/images/unknown_pipe-rack.jpg",
+    "srct": "static/assets/images/unknown_pipe-rack.jpg",
+    "date": "2026-03-17",
+    "title": "Wooden Pipe Rack",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Unknown",
+      "details": "no markings. holds 6 pipes. I use it daily to hold the churchwardens. ",
+      "acquisition_country": "Romania",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Wood",
+      "type": "Accessory",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 8,
+    "src": "static/assets/images/unknown_chamonix.jpg",
+    "srct": "static/assets/images/unknown_chamonix.jpg",
+    "date": "2026-03-17",
+    "title": "Chamonix",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Chamonix",
+      "details": "eXceptional macro",
+      "acquisition_country": "Romania",
+      "origin_country": "France",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Cherry Wood",
+      "type": "Pipe",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 9,
+    "src": "static/assets/images/zettervig_copenhagen.jpg",
+    "srct": "static/assets/images/zettervig_copenhagen.jpg",
+    "date": "2026-03-17",
+    "title": "Zettervig Copenhagen",
+    "description": "similar to the external link but not exactly the same",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Ole Zettervig",
+      "model_or_name": "Copenhagen",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "Denmark",
+      "production_date": "1970",
+      "condition": "Used",
+      "rarity": "Limited",
+      "handmade": "Yes",
+      "material": "Briar",
+      "type": "Pipe",
+      "external_links": "https://www.worthpoint.com/worthopedia/1970s-ole-zettervig-copenhagen-hand-416019812"
+    }
   }
 ]
