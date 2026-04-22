@@ -209,5 +209,77 @@
       "type": "Pipe",
       "external_links": "https://www.worthpoint.com/worthopedia/1970s-ole-zettervig-copenhagen-hand-416019812"
     }
+  },
+
+  {
+    "id": 10,
+    "src": "static/assets/images/crystal_pipe.jpg",
+    "srct": "static/assets/images/crystal_pipe.jpg",
+    "date": "2026-04-22",
+    "title": "Crystal Pipe",
+    "description": "note to self: do not drop it",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Péter Kiss",
+      "model_or_name": "Unknown",
+      "details": "",
+      "acquisition_country": "Hungary",
+      "origin_country": "Hungary",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Glass",
+      "type": "Accessory",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 11,
+    "src": "static/assets/images/mpb_silver-star.jpg",
+    "srct": "static/assets/images/mpb_silver-star.jpg",
+    "date": "2026-04-22",
+    "title": "M.P.B. Silver Star",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Manifattura Pipe Brebbia",
+      "model_or_name": "Silver Star",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "Italy",
+      "production_date": "1960s",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Briar",
+      "type": "Pipe",
+      "external_links": "https://pipedia.org/wiki/Brebbia"
+    }
+  },
+
+  {
+    "id": 12,
+    "src": "static/assets/images/unknown_dalia-deluxe.jpg",
+    "srct": "static/assets/images/unknown_dalia-deluxe.jpg",
+    "date": "2026-04-22",
+    "title": "Dalia De Luxe",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Dalia",
+      "model_or_name": "De Luxe",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "Spain?",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Briar",
+      "type": "Pipe",
+      "external_links": ""
+    }
   }
 ]
