@@ -8,4 +8,7 @@ If it walks like a duck, if it quacks like a duck...it might be roboduck. I'm no
 \
 \
 Extratereștri uniți-vă. Este un ordin.
+\
+\
+Viitorul este meta. Meta-fizică, meta-cogniție, meta-meta...
 
