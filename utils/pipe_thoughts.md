@@ -11,4 +11,7 @@ Extratereștri uniți-vă. Este un ordin.
 \
 \
 Viitorul este meta. Meta-fizică, meta-cogniție, meta-meta...
+\
+\
+Fiecare geniu este geniu până când nu mai este geniu...exceptând UNUL.
 
