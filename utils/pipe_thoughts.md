@@ -14,4 +14,7 @@ Viitorul este meta. Meta-fizică, meta-cogniție, meta-meta...
 \
 \
 Fiecare geniu este geniu până când nu mai este geniu...exceptând UNUL.
+\
+\
+Pacta sunt servanda am găsit, dar pax universalis nu.
 
