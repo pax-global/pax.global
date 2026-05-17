@@ -17,4 +17,7 @@ Fiecare geniu este geniu până când nu mai este geniu...exceptând UNUL.
 \
 \
 Pacta sunt servanda am găsit, dar pax universalis nu.
+\
+\
+Mintea ca fagurele, informația ca mierea.
 
