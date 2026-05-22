@@ -281,5 +281,77 @@
       "type": "Pipe",
       "external_links": ""
     }
+  },
+
+  {
+    "id": 13,
+    "src": "static/assets/images/crystal_stand.jpg",
+    "srct": "static/assets/images/crystal_stand.jpg",
+    "date": "2026-05-22",
+    "title": "Wooden Stand",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Unknown",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Wood",
+      "type": "Accessory",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 14,
+    "src": "static/assets/images/unknown_greecex.jpg",
+    "srct": "static/assets/images/unknown_greecex.jpg",
+    "date": "2026-05-22",
+    "title": "GreeceX",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "GreeceX",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Briar",
+      "type": "Pipe",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 15,
+    "src": "static/assets/images/unknown_marina.jpg",
+    "srct": "static/assets/images/unknown_marina.jpg",
+    "date": "2026-05-22",
+    "title": "Marina",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Marina",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Briar",
+      "type": "Pipe",
+      "external_links": ""
+    }
   }
 ]
