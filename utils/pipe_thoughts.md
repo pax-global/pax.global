@@ -20,4 +20,6 @@ Pacta sunt servanda am găsit, dar pax universalis nu.
 \
 \
 Mintea ca fagurele, informația ca mierea.
-
+\
+\
+Familia ante omnia și familia suntem toți.
