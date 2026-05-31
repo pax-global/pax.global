@@ -23,3 +23,6 @@ Mintea ca fagurele, informația ca mierea.
 \
 \
 Familia ante omnia și familia suntem toți.
+\
+\
+Numele meu este virus; PAXvirus. Mă replic cu viteza luminii.
