@@ -26,3 +26,6 @@ Familia ante omnia și familia suntem toți.
 \
 \
 Numele meu este virus; PAXvirus. Mă replic cu viteza luminii.
+\
+\
+Expir pace, inspir antipace.
