@@ -29,3 +29,7 @@ Numele meu este virus; PAXvirus. Mă replic cu viteza luminii.
 \
 \
 Expir pace, inspir antipace.
+\
+\
+Olimp, Fuji, Bucegi.
+
