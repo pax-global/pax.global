@@ -32,4 +32,7 @@ Expir pace, inspir antipace.
 \
 \
 Olimp, Fuji, Bucegi.
+\
+\
+Cine vine la hora păcii? Și eu, și eu. 
 
