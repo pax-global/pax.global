@@ -34,5 +34,9 @@ Expir pace, inspir antipace.
 Olimp, Fuji, Bucegi.
 \
 \
-Cine vine la hora păcii? Și eu, și eu. 
+Cine vine la hora păcii? Și eu, și eu, și eu.
+\
+\
+ERGO PAX ERGO PAX GLOBAL. Pleacă răule pe MARTE și nu te mai întoarce pâna când nu ești pregătit de pace; ia și binele cu tine. 
+
 
