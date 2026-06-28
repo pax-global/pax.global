@@ -38,5 +38,13 @@ Cine vine la hora păcii? Și eu, și eu, și eu.
 \
 \
 ERGO PAX ERGO PAX GLOBAL. Pleacă răule pe MARTE și nu te mai întoarce pâna când nu ești pregătit de pace; ia și binele cu tine. 
-
+\
+\
+Mai greșește și romanul; siga siga mămăliga.
+\
+\
+Decât să ne încurcăm, mai ~~bine~~ pace, ne ajutăm.
+\
+\
+Vânzarea îmi este străină. Oricât învăț, nu îmi intră în cap. Poate o fi un semn.
 
