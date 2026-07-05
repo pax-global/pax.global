@@ -47,4 +47,6 @@ Decât să ne încurcăm, mai ~~bine~~ pace, ne ajutăm.
 \
 \
 Vânzarea îmi este străină. Oricât învăț, nu îmi intră în cap. Poate o fi un semn.
-
+\
+\
+Iau la ocazie. Opresc în Egiptul Antic.
