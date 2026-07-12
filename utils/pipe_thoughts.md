@@ -50,3 +50,6 @@ Vânzarea îmi este străină. Oricât învăț, nu îmi intră în cap. Poate o
 \
 \
 Iau la ocazie. Opresc în Egiptul Antic.
+\
+\
+Oh, think thrice.
