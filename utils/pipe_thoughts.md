@@ -53,3 +53,6 @@ Iau la ocazie. Opresc în Egiptul Antic.
 \
 \
 Oh, think thrice.
+\
+\
+Regina este la biserică, regele este invizibil.
