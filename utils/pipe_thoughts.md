@@ -56,3 +56,11 @@ Oh, think thrice.
 \
 \
 Regina este la biserică, regele este invizibil.
+\
+\
+,ex luce caritas\
+,ex caritate pax\
+,ex pace lux ⟳
+
+
+
