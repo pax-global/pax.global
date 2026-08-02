@@ -61,6 +61,8 @@ Regina este la biserică, regele este invizibil.
 ,ex luce caritas\
 ,ex caritate pax\
 ,ex pace lux ⟳
-
+\
+\
+S-a îmbolnăvit Geea. Noi suntem otrava și antidotul.
 
 
