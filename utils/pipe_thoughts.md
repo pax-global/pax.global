@@ -64,5 +64,6 @@ Regina este la biserică, regele este invizibil.
 \
 \
 S-a îmbolnăvit Geea. Noi suntem otrava și antidotul.
-
-
+\
+\
+CINEVA ne vrea țărani și noi ne credem intelectuali.
