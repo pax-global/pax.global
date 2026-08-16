@@ -67,3 +67,6 @@ S-a îmbolnăvit Geea. Noi suntem otrava și antidotul.
 \
 \
 CINEVA ne vrea țărani și noi ne credem intelectuali.
+\
+\
+~~resurse umane~~ oameni
