@@ -70,3 +70,6 @@ CINEVA ne vrea țărani și noi ne credem intelectuali.
 \
 \
 ~~resurse umane~~ oameni
+\
+\
+Pâine și jocuri de circ, doar că nu mai sunt bani de pâine. Important să ne distrăm.
