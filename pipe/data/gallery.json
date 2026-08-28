@@ -353,5 +353,221 @@
       "type": "Pipe",
       "external_links": ""
     }
+  },
+
+  {
+    "id": 16,
+    "src": "static/assets/images/suport_lemn_1.jpg",
+    "srct": "static/assets/images/suport_lemn_1.jpg",
+    "date": "2026-08-28",
+    "title": "Wooden Stand",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Unknown",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Wood",
+      "type": "Accessory",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 17,
+    "src": "static/assets/images/drperl_0310.jpg",
+    "srct": "static/assets/images/drperl_0310.jpg",
+    "date": "2026-08-28",
+    "title": "DR. Perl",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "DR. Perl",
+      "model_or_name": "0310",
+      "details": "",
+      "acquisition_country": "Germany",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Briar",
+      "type": "Pipe",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 18,
+    "src": "static/assets/images/lorenzo_privateBrand_30y38s.jpg",
+    "srct": "static/assets/images/lorenzo_privateBrand_30y38s.jpg",
+    "date": "2026-08-28",
+    "title": "Lorenzo",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Lorenzo",
+      "model_or_name": "Unknown",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Briar",
+      "type": "Pipe",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 19,
+    "src": "static/assets/images/unknown_holder.jpg",
+    "srct": "static/assets/images/unknown_holder.jpg",
+    "date": "2026-08-28",
+    "title": "Unknown",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Unknown",
+      "details": "",
+      "acquisition_country": "Hungary",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Metal",
+      "type": "Accessory",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 20,
+    "src": "static/assets/images/mrbrog_arragorn.jpg",
+    "srct": "static/assets/images/mrbrog_arragorn.jpg",
+    "date": "2026-08-28",
+    "title": "MR. Brog",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "MR. Brog",
+      "model_or_name": "Arragorn",
+      "details": "",
+      "acquisition_country": "Poland",
+      "origin_country": "Poland",
+      "production_date": "Unknown",
+      "condition": "Unused",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Pearwood",
+      "type": "Pipe",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 21,
+    "src": "static/assets/images/unknown_2.jpg",
+    "srct": "static/assets/images/unknown_2.jpg",
+    "date": "2026-08-28",
+    "title": "Unknown",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Unknown",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Wood",
+      "type": "Pipe",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 22,
+    "src": "static/assets/images/briar_stand.jpg",
+    "srct": "static/assets/images/briar_stand.jpg",
+    "date": "2026-08-28",
+    "title": "Pipe Stand",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "MR. Brog",
+      "model_or_name": "Unknown",
+      "details": "",
+      "acquisition_country": "Poland",
+      "origin_country": "Poland",
+      "production_date": "Unknown",
+      "condition": "Unused",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Briar",
+      "type": "Accessory",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 23,
+    "src": "static/assets/images/stclaude.jpg",
+    "srct": "static/assets/images/stclaude.jpg",
+    "date": "2026-08-28",
+    "title": "ST. Claude",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "ST. Claude",
+      "details": "",
+      "acquisition_country": "Romania",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Briar",
+      "type": "Pipe",
+      "external_links": ""
+    }
+  },
+
+  {
+    "id": 24,
+    "src": "static/assets/images/unknown_3.jpg",
+    "srct": "static/assets/images/unknown_3.jpg",
+    "date": "2026-08-28",
+    "title": "Unknown",
+    "description": "",
+    "tags": "",
+    "properties": {
+      "manufacturer": "Unknown",
+      "model_or_name": "Unknown",
+      "details": "",
+      "acquisition_country": "Germany",
+      "origin_country": "Unknown",
+      "production_date": "Unknown",
+      "condition": "Used",
+      "rarity": "Unknown",
+      "handmade": "Unknown",
+      "material": "Wood",
+      "type": "Pipe",
+      "external_links": ""
+    }
   }
 ]
