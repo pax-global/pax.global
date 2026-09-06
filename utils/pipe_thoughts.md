@@ -76,3 +76,6 @@ Pâine și jocuri de circ, doar că nu mai sunt bani de pâine. Important să ne
 \
 \
 Homo novus, ia legătura cu homo habilis și o să te facă să înțelegi. Adevăratul templu este în tâmplă. Vei afla și despre societatea bazată pe nevoie.
+\
+\
+Am activat articolul 4.
