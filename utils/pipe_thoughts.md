@@ -79,3 +79,6 @@ Homo novus, ia legătura cu homo habilis și o să te facă să înțelegi. Adev
 \
 \
 Am activat articolul 4.
+\
+\
+Cere ajutorul lui WU și lui WEI pentru a evada din peștera cunoașterii...apoi doar plutește.
