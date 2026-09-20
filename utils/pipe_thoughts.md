@@ -82,3 +82,6 @@ Am activat articolul 4.
 \
 \
 Cere ajutorul lui WU și lui WEI pentru a evada din peștera cunoașterii...apoi doar plutește.
+\
+\
+Pe vremea mea...era suficient timp pentru toți. Pe când acum...nimic nu s-a schimbat. Noroc că timpul e statornic. Păcat de gândire.
