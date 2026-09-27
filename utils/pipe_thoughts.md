@@ -85,3 +85,6 @@ Cere ajutorul lui WU și lui WEI pentru a evada din peștera cunoașterii...apoi
 \
 \
 Pe vremea mea...era suficient timp pentru toți. Pe când acum...nimic nu s-a schimbat. Noroc că timpul e statornic. Păcat de gândire.
+\
+\
+When you think you think outside the box, you actually think in a different box. Ultimately, there is one box you cannot escape and that is the sandbox. Unless...
