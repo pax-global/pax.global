@@ -88,3 +88,6 @@ Pe vremea mea...era suficient timp pentru toți. Pe când acum...nimic nu s-a sc
 \
 \
 When you think you think outside the box, you actually think in a different box. Ultimately, there is one box you cannot escape and that is the sandbox. Unless...
+\
+\
+Scopul creației este însăși creația iar pacea este sensul. Nu orice creație are sens.
