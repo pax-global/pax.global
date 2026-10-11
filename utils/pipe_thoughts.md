@@ -91,3 +91,6 @@ When you think you think outside the box, you actually think in a different box.
 \
 \
 Scopul creației este însăși creația iar pacea este sensul. Nu orice creație are sens.
+\
+\
+Hey SRI, cum este vremea la București?
