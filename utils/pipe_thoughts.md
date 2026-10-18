@@ -94,3 +94,6 @@ Scopul creației este însăși creația iar pacea este sensul. Nu orice creați
 \
 \
 Hey SRI, cum este vremea la București?
+\
+\
+Expelliarmus! Și au rămas fără curent.
