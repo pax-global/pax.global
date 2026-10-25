@@ -97,3 +97,6 @@ Hey SRI, cum este vremea la București?
 \
 \
 Expelliarmus! Și au rămas fără curent.
+\
+\
+Întâi picioarele și după capetele. Ce este așa de greu?
