@@ -11,6 +11,82 @@ body {
  
   }
 
+body.is-collapsing::before {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  pointer-events: none;
+  z-index: 49;
+  width: clamp(280px, 48vmin, 620px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle closest-side, transparent 0 11%, rgba(255, 255, 255, 0.08) 14%, rgba(255, 255, 255, 0.28) 20%, rgba(255, 255, 255, 0.72) 28%, rgba(255, 255, 255, 0.35) 37%, rgba(255, 255, 255, 0.12) 48%, rgba(255, 255, 255, 0.04) 58%, transparent 74%);
+  content: "";
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.75);
+  animation: white-hole-aura 1.3s cubic-bezier(0.42, 0, 0.7, 1) forwards, white-hole-vibration 0.12s steps(2, end) 10;
+}
+
+body.is-collapsing .loader-text,
+body.is-collapsing .label,
+body.is-collapsing #corner-hits,
+body.is-collapsing .join-control,
+body.is-collapsing .site-navigation {
+  will-change: transform, opacity;
+}
+
+@keyframes white-hole-aura {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.72);
+  }
+
+  12% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(0.86);
+  }
+
+  72% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  84% {
+    opacity: 0.9;
+    transform: translate(-50%, -50%) scale(1.04);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1.08);
+  }
+}
+
+@keyframes white-hole-vibration {
+  0%, 100% {
+    translate: 0 0;
+  }
+
+  25% {
+    translate: -1px 1px;
+  }
+
+  50% {
+    translate: 1px -1px;
+  }
+
+  75% {
+    translate: -1px -1px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.is-collapsing::before {
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+  }
+}
+
 body nav {
     background-color: #000000;
 
@@ -28,15 +104,13 @@ body nav {
   scroll-behavior: smooth;
   display: none;
   opacity: 0;
-  transform: translateY(5px);
 
 }
 
 
 #main.delay{
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 5s ease, transform 5s ease;
+  transition: opacity 5s ease;
   
 }
 
@@ -61,6 +135,8 @@ body nav {
 
   .label {
   position: absolute;
+  left: 0;
+  top: 0;
   width: auto; 
   min-width: 100px;
   height: auto;
@@ -68,6 +144,7 @@ body nav {
   color: white;
   white-space: nowrap;
   line-height: 30px;
+  will-change: transform;
 }
 
 .ui-container {
@@ -78,6 +155,7 @@ body nav {
   display: flex;
   justify-content: space-between; 
   align-items: flex-end;
+  gap: 16px;
   pointer-events: none; 
   z-index: 10; 
 }
@@ -92,16 +170,16 @@ body nav {
 
 
 #start-button {
+  flex: 0 0 auto;
   pointer-events: auto; 
   background: transparent;
   color:  #00FF00;
-  border: 1px solid #00FF00;
+  border: 0;
   padding: 5px 20px;
   font-family: serif;
   font-size: 20px;
   cursor: pointer;
   transition: 0.3s;
-  box-shadow: 0 0 5px #00FF00; 
 }
 
 
@@ -110,16 +188,175 @@ body nav {
   color: black;
 }
 
+.join-control {
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 1 auto;
+  align-items: stretch;
+  min-width: 0;
+  max-width: min(320px, 45vw);
+  border: 1px solid #00FF00;
+  pointer-events: none;
+  box-shadow: 0 0 5px #00FF00;
+}
+
+.join-count-extension {
+  position: relative;
+  display: flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  max-width: 170px;
+  padding: 5px 8px;
+  border: 0;
+  border-right: 1px solid #00FF00;
+  color: #00FF00;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(11px, 2.5vw, 14px);
+  line-height: 1.3;
+  text-align: center;
+  cursor: help;
+  pointer-events: auto;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.join-count-extension::after {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  right: 0;
+  z-index: 20;
+  box-sizing: border-box;
+  width: max-content;
+  max-width: min(90vw, 500px);
+  padding: 6px 9px;
+  border: 1px solid #00FF00;
+  background: #000000;
+  box-shadow: 0 0 5px #00FF00;
+  color: #00FF00;
+  content: attr(data-tooltip);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+  line-height: 1.2;
+  text-align: center;
+  white-space: pre-line;
+  overflow-wrap: anywhere;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: opacity 0.15s ease, visibility 0.15s ease;
+}
+
+.join-count-extension:hover::after,
+.join-count-extension:focus::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.site-navigation {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  width: max-content;
+  gap: clamp(8px, 1.4vw, 18px);
+  max-width: calc(100vw - 40px);
+  margin: 0 auto;
+  padding: 10px 14px;
+  border: 1px solid #00ff00;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.92);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 5px #00ff00;
+}
+
+.site-navigation.is-hidden {
+  display: none;
+}
+
+.site-navigation > a,
+.apps-dropdown > summary {
+  padding: 4px 2px;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(12px, 1.2vw, 15px);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.site-navigation > a:hover,
+.apps-dropdown > summary:hover {
+  background: #00ff00;
+  color: #000000;
+}
+
+.apps-dropdown {
+  position: relative;
+}
+
+.apps-dropdown > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.apps-dropdown > summary::-webkit-details-marker {
+  display: none;
+}
+
+.apps-menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  min-width: 160px;
+  padding: 6px;
+  border: 1px solid #00ff00;
+  border-radius: 0;
+  background: #000000;
+  box-shadow: 0 0 5px #00ff00;
+}
+
+.apps-dropdown[open] .apps-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.apps-menu a {
+  padding: 8px 10px;
+  color: #00ff00;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.apps-menu a:hover {
+  background: #00ff00;
+  color: #000000;
+}
+
+.site-navigation a:focus-visible,
+.apps-dropdown > summary:focus-visible,
+.apps-menu a:focus-visible {
+  outline: 1px solid #00ff00;
+  outline-offset: 3px;
+}
+
 
 .fade-in{
   opacity: 0;
-  transform: translateY(10px);
 }
 
 .fade-in.active{
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.8s ease;
 }
 
 
@@ -271,6 +508,12 @@ body nav {
     height: 100vh;
     width: 100%;
   }
+
+  .loader {
+    height: 100vh;
+    height: 100dvh;
+  }
+
     .social-icon {
       display: flex;
       flex-direction: initial;
@@ -285,22 +528,83 @@ body nav {
     }
 
     .label {
-      font-size: 24px;
-      line-height: 22px;
+      width: max-content;
+      min-width: 0;
+      max-width: calc(100vw - 32px);
+      font-size: clamp(17px, 5vw, 22px);
+      line-height: 1.2;
+      text-align: center;
+      white-space: nowrap;
     }
-  
-    .loader-text{
-      font-size: 42px;
 
+    .label.fade-in,
+    .label.fade-in.active {
+      transition: opacity 0.25s ease;
+    }
+
+    .loader-text{
+      position: absolute;
+      top: calc(46% - 0.5em);
+      left: 0;
+      right: 0;
+      font-size: clamp(32px, 9vw, 42px);
+      line-height: 1;
+      text-align: center;
+      white-space: nowrap;
+      transform: none;
     }
 
   .ui-container{
-    bottom: 50px;
-    left: 15px;
-    right: 15px;
+    bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+    left: calc(14px + env(safe-area-inset-left, 0px));
+    right: calc(14px + env(safe-area-inset-right, 0px));
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 8px;
+  }
+
+  #corner-hits {
+    font-size: clamp(14px, 4vw, 16px);
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+
+  .join-control {
+    max-width: min(220px, 58vw);
+  }
+
+  .join-count-extension {
+    padding: 5px 6px;
+    font-size: clamp(10px, 2.8vw, 12px);
+  }
+
+  #start-button {
+    padding: 6px 14px;
+    font-size: 18px;
     }
 
+  .site-navigation {
+    box-sizing: border-box;
+    top: calc(12px + env(safe-area-inset-top, 0px));
+    left: 10px;
+    right: auto;
+    width: calc(100vw - 20px);
+    max-width: none;
+    margin: 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 0;
+    padding: 6px 8px;
+    transform: none;
+  }
 
+  .site-navigation > a,
+  .apps-dropdown > summary {
+    padding: 5px 1px;
+    font-size: clamp(10px, 3vw, 12px);
+    letter-spacing: 0.02em;
+  }
 
   }
 

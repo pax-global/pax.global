@@ -9,8 +9,10 @@
 <meta name="description" content="think bold, act swift" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/static/images/day-apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/static/images/day-favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/static/images/day-favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: light)" href="/static/images/day-favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" media="(prefers-color-scheme: light)" href="/static/images/day-favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" media="(prefers-color-scheme: dark)" href="/static/images/night-favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" media="(prefers-color-scheme: dark)" href="/static/images/night-favicon-16x16.png">
 <link rel="manifest" href="/static/manifest/site.webmanifest">
 
 
@@ -20,7 +22,7 @@
 
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="/static/css/stylesheet.css">
+  <link rel="stylesheet" href="/static/css/stylesheet.css?v=mobile-layout-9">
 
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.28/build/spline-viewer.js"></script>
   <script type="application/ld+json">
@@ -54,21 +56,45 @@
 
 <body>
 
+  <nav class="site-navigation" aria-label="Primary navigation">
+    <a href="https://status.pax.global/" target="_blank" rel="noopener noreferrer">Status</a>
+    <a href="https://journal.pax.global/" target="_blank" rel="noopener noreferrer">Journal</a>
+    <details class="apps-dropdown">
+      <summary>Apps <i class="ri-arrow-down-s-line" aria-hidden="true"></i></summary>
+      <div class="apps-menu">
+        <a href="https://colaboratori.ro" target="_blank" rel="noopener noreferrer">Colaboratori</a>
+        <a href="https://specula.vision" target="_blank" rel="noopener noreferrer">Specula</a>
+        <a href="https://tempora.events" target="_blank" rel="noopener noreferrer">Tempora</a>
+      </div>
+    </details>
+    <a href="https://shop.pax.global/" target="_blank" rel="noopener noreferrer">Shop</a>
+    <a href="/pipe/" target="_blank" rel="noopener noreferrer">Pipe Gallery</a>
+    <a href="/about/" target="_blank" rel="noopener noreferrer">About</a>
+  </nav>
+
   <!-- Loading page -->
 
   <div class="loader" id="loader">
 
     <div class="loader-text">PAXᴳᴸᴼᴮᴬᴸ</div>
 
-    <div class="label fade-in">Bine ați venit</div>
+    <div class="label fade-in">Salve</div>
     <div class="label fade-in">Welcome</div>
     <div class="label fade-in">Добро пожаловать</div>
     <div class="label fade-in">欢迎来到</div>
+    <div class="label fade-in" lang="es">Bienvenidos</div>
+    <div class="label fade-in" lang="fr">Bienvenue</div>
+    <div class="label fade-in" lang="ar" dir="rtl">أهلاً وسهلاً</div>
 
     
   <div class="ui-container">
     <div id="corner-hits">CORNER HITS: <span id="score">0</span></div>
+    <div class="join-control">
+    <span id="join-count" class="join-count-extension" role="status" aria-live="polite"
+      aria-label="Click counts loading" aria-description="Exact click count shown on hover"
+      data-tooltip="Click counts&#10;loading" tabindex="0">Loading...</span>
     <button id="start-button">JOIN</button>
+    </div>
   </div>
     
 
@@ -83,7 +109,7 @@
       
       <div class="nav">
         <div class="animatie background">
-          <spline-viewer id="spline-viewer" url="https://prod.spline.design/Dcy0U9WH-x5xBAuX/scene.splinecode"></spline-viewer>
+          <spline-viewer id="spline-viewer" loading="eager" data-scene-url="https://prod.spline.design/Dcy0U9WH-x5xBAuX/scene.splinecode"></spline-viewer>
         </div>    
       </div>
     </section>
@@ -228,7 +254,7 @@
 
 <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-  <script src="/static/js/script.js"></script>
+  <script src="/static/js/script.js?v=mobile-layout-16"></script>
   
   <script>
     AOS.init();
