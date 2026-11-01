@@ -100,3 +100,6 @@ Expelliarmus! Și au rămas fără curent.
 \
 \
 Întâi picioarele și după capetele. Ce este așa de greu?
+\
+\
+Este responsabilitatea noastră, a tuturor. Cartoful fierbinte nu se aruncă, se mănâncă.
