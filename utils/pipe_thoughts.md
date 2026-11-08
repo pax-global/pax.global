@@ -103,3 +103,6 @@ Expelliarmus! Și au rămas fără curent.
 \
 \
 Este responsabilitatea noastră, a tuturor. Cartoful fierbinte nu se aruncă, se mănâncă.
+\
+\
+SPP - Salvăm Planeta Pământ
